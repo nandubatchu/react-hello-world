@@ -10,13 +10,7 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <Route exact path="/" component={LayoutComponent} >
-          <div>
-            <Route path="/login" component={LoginForm} />
-            <Route path="/signup" component={SignupForm} />
-          </div>
-        </Route>
-
+        <Route exact path="/" component={LayoutComponent} />
       </Router>
     );
   }
