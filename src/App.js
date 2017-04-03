@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { IndexRoute, browserHistory, Router, Route } from 'react-router';
+import { IndexRoute, BrowserRouter as Router, Route } from 'react-router-dom';
 import './App.css';
 
 import LayoutComponent from './components/layout';
@@ -9,12 +9,14 @@ import SignupForm from './components/signupForm';
 class App extends Component {
   render() {
     return (
-      <Router history={browserHistory}>
-        <Route path="/" component={LayoutComponent} >
-          <IndexRoute component={LoginForm} />
-          <Route path="/login" component={LoginForm} />
-          <Route path="/signup" component={SignupForm} />
+      <Router>
+        <Route exact path="/" component={LayoutComponent} >
+          <div>
+            <Route path="/login" component={LoginForm} />
+            <Route path="/signup" component={SignupForm} />
+          </div>
         </Route>
+
       </Router>
     );
   }
