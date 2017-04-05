@@ -6,14 +6,14 @@ import './loginForm.css'
 class LoginForm extends Component {
   render() {
     return (
-      <Card title="Login Form" extra={<Link to="/signup">Register</Link>} style={{ width: 300 }}>
+      <Card title="Login Form" extra={<Link to="/signup">Register</Link>} style={{ width: "100%" }}>
         <Input size="large" placeholder="Client ID" />
         <Input size="large" type="password" placeholder="Password" />
         <div style={{ margin: '24px 0' }} />
-        <div>
+        <Link to="/dashboard">
           <Button type="primary" style={{ width: 100 }} >Login</Button>
           <a href="#" style={{float: "right"}}>Forgot Password?</a>
-        </div>
+        </Link>
 
       </Card>
     );
