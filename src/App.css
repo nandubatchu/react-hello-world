@@ -1,4 +1,3 @@
-@import '~antd/dist/antd.css';
 
 
 .App {
@@ -34,4 +33,8 @@
   border-radius: 6px;
   margin: 16px 28px 16px 0;
   float: left;
+}
+
+.ant-layout-header {
+  height: 50px;
 }

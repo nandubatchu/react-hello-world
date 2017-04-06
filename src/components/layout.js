@@ -10,7 +10,7 @@ class LayoutComponent extends Component {
   render() {
     return (
       <div>
-        <Header />
+        <Header theme="light" />
         <Row type="flex" justify="center">
           <Col span={20}>
             <Row>
