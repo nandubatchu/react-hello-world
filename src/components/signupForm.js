@@ -6,7 +6,7 @@ import './signupForm.css';
 class SignupForm extends Component {
   render() {
     return (
-      <Card title="Signup Form" extra={<Link to="/login">Login</Link>} style={{ maxWidth: 300 }}>
+      <Card title="Signup Form" extra={<Link to="/login">Login</Link>} style={{ maxWidth: 300, margin: '0 auto'}}>
         <Input size="large" type="email" placeholder="Email ID" />
         <Input size="large" type="password" placeholder="Password" />
         <Input size="large" type="password" placeholder="Confirm Password" />
