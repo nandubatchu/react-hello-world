@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import { Route } from 'react-router-dom';
 import { Row, Col } from 'antd';
 
+import OrderModalComponent from './orderModal';
 
 class DashboardComponent extends Component {
   render() {
@@ -16,6 +17,8 @@ class DashboardComponent extends Component {
         [BTC: 3,00,000 satoshi]<br /><br />
         
         [Pending Orders|Table]<br />
+        
+        <OrderModalComponent />
         
         </div>
 

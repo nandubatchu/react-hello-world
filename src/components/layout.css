@@ -1,0 +1,7 @@
+.ant-layout-header {
+  height: 40px;
+}
+
+.ant-layout-header h1 {
+    line-height: 40px;
+}

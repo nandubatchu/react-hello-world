@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import { Route } from 'react-router-dom';
+import './layout.css';
 import { Row, Col, Layout } from 'antd';
 const { Header } = Layout;
 
